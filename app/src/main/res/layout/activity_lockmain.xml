@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jianrt.slidetounlock.view.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+    <ImageView
+        android:id="@+id/locksceen_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@mipmap/bg"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:gravity="center"
+          android:orientation="vertical"
+          >
+
+        <TextClock
+            android:id="@+id/lock_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FFF"
+            android:textSize="48sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/lock_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="4dp"
+            android:text="08/11/Tues"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            />
+      </LinearLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:layout_marginLeft="56dp"
+          android:layout_marginRight="56dp"
+          android:background="#8fFFFFFF"
+          />
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0px"
+          android:layout_weight="1"
+          />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:gravity="center"
+          android:orientation="vertical"
+          >
+
+
+        <com.romainpiel.shimmer.ShimmerTextView
+            android:id="@+id/lockmain_shimmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/slidinglockclose"
+            android:textColor="#999999"
+            android:textSize="22sp"
+            />
+
+      </LinearLayout>
+    </LinearLayout>
+
+  </FrameLayout>
+</jianrt.slidetounlock.view.SwipeBackLayout>
